@@ -51,7 +51,7 @@ around.
 <summary><b>Debian, Ubuntu, Mint</b></summary>
 
 ```bash
-curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.1/obelisk-shell_amd64.deb -o /tmp/obelisk.deb
+curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.2/obelisk-shell_amd64.deb -o /tmp/obelisk.deb
 sudo apt install /tmp/obelisk.deb
 ```
 
@@ -61,7 +61,7 @@ sudo apt install /tmp/obelisk.deb
 <summary><b>Fedora, RHEL, openSUSE</b></summary>
 
 ```bash
-curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.1/obelisk-shell_x86_64.rpm -o /tmp/obelisk.rpm
+curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.2/obelisk-shell_x86_64.rpm -o /tmp/obelisk.rpm
 sudo dnf install /tmp/obelisk.rpm
 ```
 
@@ -71,7 +71,7 @@ sudo dnf install /tmp/obelisk.rpm
 <summary><b>Any Linux, without installing anything</b></summary>
 
 ```bash
-curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.1/obelisk-shell_amd64.AppImage -o obelisk
+curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.2/obelisk-shell_amd64.AppImage -o obelisk
 chmod +x obelisk
 ./obelisk
 ```

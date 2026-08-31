@@ -14,29 +14,26 @@
 <tr>
 <td width="33%" valign="top">
 
-### Yours, and nobody else's
+### Fully Local and Private
 
-No account, no sync service, no telemetry. Everything lives in plain files on
-your disk that you can open, back up and read without us. The only time
-anything reaches the network is when you ask it to check for an update.
-
-</td>
-<td width="33%" valign="top">
-
-### Built to look at all day
-
-These are tools you will keep open for hours, so they are designed like it.
-Careful typography, motion that helps rather than decorates, and themes with
-real depth: layered backgrounds, frosted glass, light that moves.
+No account, no remote servers, no one has access to your data but you. Everything lives in plain or encrypted files on
+your disk that you own.
 
 </td>
 <td width="33%" valign="top">
 
-### Bend it to fit you
+### Beautiful Design
 
-Most apps give you a colour picker and call it customisation. Here you shape
-the thing itself: what the views are, what the statuses mean, what each card
-shows, which panels exist. The defaults are somewhere to start.
+Careful typography, motion that helps rather than decorates, and customizable themes with
+real depth.
+
+</td>
+<td width="33%" valign="top">
+
+### Powerful Customization
+
+All apps in the Obelisk suite are designed to bend to your standards and workflow. Here you shape
+the thing itself, the defaults are only somewhere to start.
 
 </td>
 </tr>
@@ -84,16 +81,7 @@ chmod +x obelisk
 <details>
 <summary><b>Windows and macOS</b></summary>
 
-Both build, neither has shipped yet. There is no command here that would work
-today, and a broken one seemed worse than an honest gap.
-
 </details>
-
-> **There is no `curl … | sh` here on purpose.**
-> The usual one liner pipes a script straight into your shell. For a project
-> whose whole claim is that it does not phone home, opening by asking you to
-> run something you have not read would be a strange way to start. Every
-> command above is short enough to read first.
 
 ---
 
@@ -107,20 +95,18 @@ today, and a broken one seemed worse than an honest gap.
 </td>
 <td valign="top">
 
-**Most task apps remember what you owe. This one tells you what it will cost.**
+**Taskmancer is designed for optimizing overloaded, complex workflows**
 
-**It recommends work by rules you wrote.** Every other app buries "what should
+**Custom task suggestion rules.** Every other app buries "what should
 I do now" in a hidden formula. Here you write it: weigh by priority, project,
 age, urgency, whatever actually matters to you, and the answer comes back in
 your own terms.
 
-**It keeps up with your hands.** One shortcut makes a task from anywhere.
+**Navigate with vim and keyboard** One shortcut makes a task from anywhere.
 Vim motions move you through everything. You can run a whole day without
 reaching for the mouse.
 
-**It shows you the week before you get there.** Each day carries its predicted
-hours against your target, so Thursday has a weight on Monday. Every chart is
-yours to move, resize or throw away.
+**Measure everything** Number of tasks, time spent, time predicted, status and project distributions, what's likely to get cancelled. You name it.
 
 </td>
 </tr>

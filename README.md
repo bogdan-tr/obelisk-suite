@@ -148,12 +148,12 @@ Settings → Apps like anything else.
 ## Taskmancer
 
 <details open>
-<summary><b>Everything about Taskmancer</b> — the film, the screenshots, how to install it, and what it does</summary>
+<summary><b>Everything about Taskmancer</b> — the demo, the screenshots, how to install it, and what it does</summary>
 
 
 <div align="center">
 
-<img src="https://github.com/bogdan-tr/obelisk-suite/raw/main/assets/taskmancer-demo.webp" alt="Taskmancer: today view, natural-language task entry, load prediction, planning around a calendar, vim navigation, and the theme reel" width="860">
+<video src="https://github.com/user-attachments/assets/1407be46-a8ce-471e-9b9e-9b93b3a70b92" controls muted width="860"></video>
 
 <!--
   An animated WebP, not the mp4, and not a GIF. Round FE, measured rather
@@ -173,14 +173,12 @@ Settings → Apps like anything else.
   256 colours that band the theme reel badly. This file is 860px, 10fps,
   6.3 MB.
 
-  TO GET A REAL PLAYER (controls, scrubbing, full 30fps): upload the mp4
-  through GitHub's own attachment store -- drag it into a new issue, copy the
-  https://github.com/user-attachments/assets/<id> URL it produces, close the
-  tab without submitting -- and replace the <img> above with:
-      <video src="<that URL>" controls muted width="860"></video>
-  That host serves a real video/mp4, which is the whole difference.
+  This URL is GitHub's attachment store, the one host that serves a real
+  video/mp4 -- uploaded by dragging the file into an issue. raw and the
+  release assets both serve application/octet-stream with nosniff, which
+  no browser will decode as video.
 -->
-<sub><i><a href="https://github.com/bogdan-tr/obelisk-suite/raw/main/assets/taskmancer-demo.mp4">Download the film in full quality</a> — 1280&times;800, 30fps.</i></sub>
+<sub><i><a href="https://github.com/bogdan-tr/obelisk-suite/raw/main/assets/taskmancer-demo.mp4">Download the demo in full quality</a> — 1280&times;800, 30fps.</i></sub>
 
 </div>
 

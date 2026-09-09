@@ -59,7 +59,7 @@ around.
 <summary><b>Debian, Ubuntu, Mint</b></summary>
 
 ```bash
-curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.2/obelisk-shell_amd64.deb -o /tmp/obelisk.deb
+curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.3/obelisk-shell_amd64.deb -o /tmp/obelisk.deb
 sudo apt install /tmp/obelisk.deb
 ```
 
@@ -69,7 +69,7 @@ sudo apt install /tmp/obelisk.deb
 <summary><b>Fedora, RHEL, openSUSE</b></summary>
 
 ```bash
-curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.2/obelisk-shell_x86_64.rpm -o /tmp/obelisk.rpm
+curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.3/obelisk-shell_x86_64.rpm -o /tmp/obelisk.rpm
 sudo dnf install /tmp/obelisk.rpm
 ```
 
@@ -82,7 +82,7 @@ The launcher ships as an AppImage for Arch-based systems.
 
 ```bash
 mkdir -p ~/Applications
-curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.2/obelisk-shell_amd64.AppImage -o ~/Applications/obelisk
+curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.3/obelisk-shell_amd64.AppImage -o ~/Applications/obelisk
 chmod +x ~/Applications/obelisk
 ~/Applications/obelisk
 ```
@@ -102,7 +102,7 @@ The AppImage is a single self-contained file: no install, no root, and
 removing it is deleting the file.
 
 ```bash
-curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.2/obelisk-shell_amd64.AppImage -o obelisk
+curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.3/obelisk-shell_amd64.AppImage -o obelisk
 chmod +x obelisk
 ./obelisk
 ```
@@ -117,7 +117,7 @@ moving the file later loses nothing.
 <summary><b>macOS</b></summary>
 
 ```bash
-curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.2/obelisk-shell_universal.dmg -o ~/Downloads/obelisk.dmg
+curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.3/obelisk-shell_universal.dmg -o ~/Downloads/obelisk.dmg
 open ~/Downloads/obelisk.dmg
 ```
 
@@ -134,7 +134,7 @@ Apple Silicon and Intel.
 
 Download and run the installer:
 
-**[obelisk-shell_x64-setup.exe](https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.2/obelisk-shell_x64-setup.exe)**
+**[obelisk-shell_x64-setup.exe](https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.3/obelisk-shell_x64-setup.exe)**
 
 SmartScreen may show "Windows protected your PC" because the installer is
 not code-signed with Microsoft: click **More info**, then **Run anyway**.
@@ -153,18 +153,34 @@ Settings → Apps like anything else.
 
 <div align="center">
 
-<video src="https://github.com/bogdan-tr/obelisk-suite/raw/main/assets/taskmancer-demo.mp4" controls muted width="900"></video>
+<img src="https://github.com/bogdan-tr/obelisk-suite/raw/main/assets/taskmancer-demo.webp" alt="Taskmancer: today view, natural-language task entry, load prediction, planning around a calendar, vim navigation, and the theme reel" width="860">
 
 <!--
-  GitHub's sanitiser keeps <video src> with controls and muted, and strips
-  `autoplay`, `loop`, `poster`, `playsinline` and any <source> child's src --
-  checked against the /markdown API, not assumed. So the film CANNOT autoplay
-  here; adding the attribute back only looks like it works locally. A GIF is
-  the only thing GitHub autoplays, and that was weighed and declined (round
-  FB). The fallback below is a LINK, not a second copy: a poster image here
-  rendered the film twice on the page.
+  An animated WebP, not the mp4, and not a GIF. Round FE, measured rather
+  than assumed.
+
+  The <video> tag that used to be here was never the problem -- GitHub's
+  sanitiser keeps it. The FILE was: raw.githubusercontent.com serves
+  taskmancer-demo.mp4 as `application/octet-stream` with
+  `X-Content-Type-Options: nosniff`, so the browser is handed a generic
+  download and forbidden from guessing otherwise. No player can decode that,
+  which is why it rendered blank and only the fallback link worked. The same
+  host serves taskmancer.png as image/png and shot-today.webp as image/webp,
+  so images are fine and video simply is not available from there.
+
+  GIF was weighed again with real numbers and stays declined: the same film
+  at the same 800px/10fps is 33.7 MB as a GIF against 5.8 MB as WebP, with
+  256 colours that band the theme reel badly. This file is 860px, 10fps,
+  6.3 MB.
+
+  TO GET A REAL PLAYER (controls, scrubbing, full 30fps): upload the mp4
+  through GitHub's own attachment store -- drag it into a new issue, copy the
+  https://github.com/user-attachments/assets/<id> URL it produces, close the
+  tab without submitting -- and replace the <img> above with:
+      <video src="<that URL>" controls muted width="860"></video>
+  That host serves a real video/mp4, which is the whole difference.
 -->
-<sub><i><a href="https://github.com/bogdan-tr/obelisk-suite/raw/main/assets/taskmancer-demo.mp4">Watch the demo</a> if the player above does not load.</i></sub>
+<sub><i><a href="https://github.com/bogdan-tr/obelisk-suite/raw/main/assets/taskmancer-demo.mp4">Download the film in full quality</a> — 1280&times;800, 30fps.</i></sub>
 
 </div>
 
@@ -172,7 +188,7 @@ Settings → Apps like anything else.
 <tr>
 <td width="150" align="center" valign="top">
   <img src="assets/taskmancer.png" alt="" width="112">
-  <br><sub><b>v0.1.2</b><br>available now</sub>
+  <br><sub><b>v0.1.3</b><br>available now</sub>
 </td>
 <td valign="top">
 

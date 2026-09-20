@@ -14,6 +14,21 @@
 -->
 [**Install**](#install) · [Taskmancer](#taskmancer) · [Zorynda](#the-rest-of-the-suite) · [Dreambase](#the-rest-of-the-suite) · [Warder](#the-rest-of-the-suite) · [Alexandria](#the-rest-of-the-suite) · [Obsidian&nbsp;Bridge](#the-rest-of-the-suite) · [Photos](#the-rest-of-the-suite) · [Updates](#updates)
 
+<!--
+  The launcher itself, directly under the title (round GT). Until now the
+  README showed nothing of the product until the Taskmancer demo two screens
+  down -- an icon, a claim and a row of links, then three columns asserting
+  things about software the reader has not seen. This is the one place someone
+  who scrolls no further still sees what Obelisk is.
+
+  Cropped above the "Coming soon" row rather than the full window: the full
+  frame cuts those cards through the middle. 860px to match the demo film
+  below, which is the widest thing on the page.
+-->
+<img src="assets/shot-launcher.webp" alt="The Obelisk launcher, with four apps installed and each offering About and Open" width="860">
+
+<sub><i>Every app on this machine, and nothing off it.</i></sub>
+
 </div>
 
 ---
@@ -59,7 +74,7 @@ around.
 <summary><b>Debian, Ubuntu, Mint</b></summary>
 
 ```bash
-curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.3/obelisk-shell_amd64.deb -o /tmp/obelisk.deb
+curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.4/obelisk-shell_amd64.deb -o /tmp/obelisk.deb
 sudo apt install /tmp/obelisk.deb
 ```
 
@@ -69,7 +84,7 @@ sudo apt install /tmp/obelisk.deb
 <summary><b>Fedora, RHEL, openSUSE</b></summary>
 
 ```bash
-curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.3/obelisk-shell_x86_64.rpm -o /tmp/obelisk.rpm
+curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.4/obelisk-shell_x86_64.rpm -o /tmp/obelisk.rpm
 sudo dnf install /tmp/obelisk.rpm
 ```
 
@@ -82,7 +97,7 @@ The launcher ships as an AppImage for Arch-based systems.
 
 ```bash
 mkdir -p ~/Applications
-curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.3/obelisk-shell_amd64.AppImage -o ~/Applications/obelisk
+curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.4/obelisk-shell_amd64.AppImage -o ~/Applications/obelisk
 chmod +x ~/Applications/obelisk
 ~/Applications/obelisk
 ```
@@ -102,7 +117,7 @@ The AppImage is a single self-contained file: no install, no root, and
 removing it is deleting the file.
 
 ```bash
-curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.3/obelisk-shell_amd64.AppImage -o obelisk
+curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.4/obelisk-shell_amd64.AppImage -o obelisk
 chmod +x obelisk
 ./obelisk
 ```
@@ -117,7 +132,7 @@ moving the file later loses nothing.
 <summary><b>macOS</b></summary>
 
 ```bash
-curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.3/obelisk-shell_universal.dmg -o ~/Downloads/obelisk.dmg
+curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.4/obelisk-shell_universal.dmg -o ~/Downloads/obelisk.dmg
 open ~/Downloads/obelisk.dmg
 ```
 
@@ -134,7 +149,7 @@ Apple Silicon and Intel.
 
 Download and run the installer:
 
-**[obelisk-shell_x64-setup.exe](https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.3/obelisk-shell_x64-setup.exe)**
+**[obelisk-shell_x64-setup.exe](https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.4/obelisk-shell_x64-setup.exe)**
 
 SmartScreen may show "Windows protected your PC" because the installer is
 not code-signed with Microsoft: click **More info**, then **Run anyway**.
@@ -186,7 +201,7 @@ Settings → Apps like anything else.
 <tr>
 <td width="150" align="center" valign="top">
   <img src="assets/taskmancer.png" alt="" width="112">
-  <br><sub><b>v0.1.3</b><br>available now</sub>
+  <br><sub><b>v0.1.4</b><br>available now</sub>
 </td>
 <td valign="top">
 

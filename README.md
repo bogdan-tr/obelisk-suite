@@ -12,7 +12,7 @@
   sees, and they reflow badly on a phone. Every target is a heading GitHub
   already anchors.
 -->
-[**Install**](#install) · [Taskmancer](#taskmancer) · [Zorynda](#the-rest-of-the-suite) · [Dreambase](#the-rest-of-the-suite) · [Warder](#the-rest-of-the-suite) · [Alexandria](#the-rest-of-the-suite) · [Obsidian&nbsp;Bridge](#the-rest-of-the-suite) · [Photos](#the-rest-of-the-suite) · [Updates](#updates)
+[**Install**](#install) · [Taskmancer](#taskmancer) · [Zorynda](#zorynda) · [Dreambase](#the-rest-of-the-suite) · [Warder](#the-rest-of-the-suite) · [Alexandria](#the-rest-of-the-suite) · [Obsidian&nbsp;Bridge](#the-rest-of-the-suite) · [Photos](#the-rest-of-the-suite) · [Updates](#updates)
 
 <!--
   The launcher itself, directly under the title (round GT). Until now the
@@ -74,7 +74,7 @@ around.
 <summary><b>Debian, Ubuntu, Mint</b></summary>
 
 ```bash
-curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.4/obelisk-shell_amd64.deb -o /tmp/obelisk.deb
+curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.5/obelisk-shell_amd64.deb -o /tmp/obelisk.deb
 sudo apt install /tmp/obelisk.deb
 ```
 
@@ -84,7 +84,7 @@ sudo apt install /tmp/obelisk.deb
 <summary><b>Fedora, RHEL, openSUSE</b></summary>
 
 ```bash
-curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.4/obelisk-shell_x86_64.rpm -o /tmp/obelisk.rpm
+curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.5/obelisk-shell_x86_64.rpm -o /tmp/obelisk.rpm
 sudo dnf install /tmp/obelisk.rpm
 ```
 
@@ -97,7 +97,7 @@ The launcher ships as an AppImage for Arch-based systems.
 
 ```bash
 mkdir -p ~/Applications
-curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.4/obelisk-shell_amd64.AppImage -o ~/Applications/obelisk
+curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.5/obelisk-shell_amd64.AppImage -o ~/Applications/obelisk
 chmod +x ~/Applications/obelisk
 ~/Applications/obelisk
 ```
@@ -117,7 +117,7 @@ The AppImage is a single self-contained file: no install, no root, and
 removing it is deleting the file.
 
 ```bash
-curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.4/obelisk-shell_amd64.AppImage -o obelisk
+curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.5/obelisk-shell_amd64.AppImage -o obelisk
 chmod +x obelisk
 ./obelisk
 ```
@@ -132,7 +132,7 @@ moving the file later loses nothing.
 <summary><b>macOS</b></summary>
 
 ```bash
-curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.4/obelisk-shell_universal.dmg -o ~/Downloads/obelisk.dmg
+curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.5/obelisk-shell_universal.dmg -o ~/Downloads/obelisk.dmg
 open ~/Downloads/obelisk.dmg
 ```
 
@@ -149,7 +149,7 @@ Apple Silicon and Intel.
 
 Download and run the installer:
 
-**[obelisk-shell_x64-setup.exe](https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.4/obelisk-shell_x64-setup.exe)**
+**[obelisk-shell_x64-setup.exe](https://github.com/bogdan-tr/obelisk-suite/releases/download/obelisk-shell-v0.1.5/obelisk-shell_x64-setup.exe)**
 
 SmartScreen may show "Windows protected your PC" because the installer is
 not code-signed with Microsoft: click **More info**, then **Run anyway**.
@@ -251,9 +251,9 @@ intact. Built in, not something you assemble.
 week's forecast true, rather than a report nobody opens.
 
 **Plan a day against real hours.** Lay the work onto a timeline and see
-whether it fits. What does not fit is the useful part. Taskmancer already
-draws your real calendar alongside it and plans around the gaps — that part
-switches on once Zorynda ships and the two find each other on your machine.
+whether it fits. What does not fit is the useful part. With Zorynda
+installed, Taskmancer draws your real calendar alongside it and plans around
+the gaps — the two find each other on your machine.
 
 **Over seventy themes.** Cosmic, aquatic, nature, crystal, glass. The frosted
 surfaces are tunable per theme: tint, blur, brightness, transparency.
@@ -267,7 +267,7 @@ on your own machine. Off by default, and nothing leaves the room.
 
 > **The easy way:** install **Obelisk** above, open it, and press Install on the
 > Taskmancer tile. You get every app from one place, updates included, and you
-> can add Zorynda and the rest as they arrive without hunting for downloads.
+> can add Zorynda now, and the rest as they arrive, without hunting for downloads.
 
 Or take it on its own — it is a complete app and needs nothing else:
 
@@ -336,16 +336,156 @@ any other program.
 
 ---
 
+<!-- Zorynda section: approved round HC (apps/calendar), draft
+     apps/calendar/docs/dev-data/readme-proposal/zorynda-section.md.
+     The film URL below was set ONCE, by hand (2026-09-24), to the
+     github.com/user-attachments URL of zorynda-demo.mp4 (the only host that
+     plays video -- see the Taskmancer film comment above). -->
+## Zorynda
+
+<details open>
+<summary><b>Everything about Zorynda</b> — the demo, the screenshots, how to install it, and what it does</summary>
+
+
+<div align="center">
+
+<video src="https://github.com/user-attachments/assets/0d3cfc11-b03e-4bf8-9aad-7d363f196d6b" controls muted width="860"></video>
+
+<sub><i><a href="https://github.com/bogdan-tr/obelisk-suite/raw/main/assets/zorynda-demo.mp4">Download the demo in full quality</a> — 1280&times;800, 30fps.</i></sub>
+
+</div>
+
+<table>
+<tr>
+<td width="150" align="center" valign="top">
+  <img src="assets/zorynda.png" alt="" width="112">
+  <br><sub><b>v0.1.0</b><br>available now</sub>
+</td>
+<td valign="top">
+
+**Zorynda is a calendar for seeing your time as it really is**
+
+**Type it like a sentence.** `Lunch with Sam +Work 5pm every day @store` fills
+in the calendar, the time, the repeat and the place while you type.
+
+**Timelines for the long view.** Plans broken into stages across months — a
+launch, a thesis, an application season — laid against the same dates as
+your events.
+
+**Your real availability.** Set your sleep hours, per day of the week, and
+they are shaded out of every day. What is left is time you actually have.
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="33%" align="center"><img src="assets/zorynda-shot-month.webp" alt="Month view on the Sunset Blvd theme, full of colour-coded events" width="100%"><br><sub><b>Month</b> — everything at a glance</sub></td>
+<td width="33%" align="center"><img src="assets/zorynda-shot-timelines.webp" alt="Timelines: two plans broken into stages across several months" width="100%"><br><sub><b>Timelines</b> — plans in stages</sub></td>
+<td width="33%" align="center"><img src="assets/zorynda-shot-bedtime.webp" alt="Day view with the night hours shaded out" width="100%"><br><sub><b>Day</b> — sleep shaded out</sub></td>
+</tr>
+</table>
+
+<details>
+<summary><b>More about Zorynda</b></summary>
+
+<br>
+
+**Forty themes, and some follow the sun.** Painted scenes — a harbour at
+night, fireworks, a lighthouse in fog — and four *Through the Day* places
+that move from dawn to dusk with your real sunrise and sunset.
+
+**Stretch the hours.** Four named densities and a slider, from the whole day
+on one screen to a quarter-hour you can comfortably click.
+
+**Taskmancer sees it.** Taskmancer's planner draws your Zorynda calendar
+beside your tasks and plans around the gaps.
+
+**Google Calendar, both ways — coming.** Importing Google Calendar and editing
+its events from Zorynda is built; it opens to everyone once Google finishes
+verifying the app. A mobile app is on the way too.
+
+</details>
+
+### Installing Zorynda
+
+> **The easy way:** install **Obelisk** above, open it, and press Install on the
+> Zorynda tile.
+
+Or take it on its own:
+
+<details>
+<summary><b>Debian, Ubuntu, Mint</b></summary>
+
+```bash
+curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/zorynda-latest/zorynda_amd64.deb -o /tmp/zorynda.deb
+sudo apt install /tmp/zorynda.deb
+```
+
+</details>
+
+<details>
+<summary><b>Fedora, RHEL, openSUSE</b></summary>
+
+```bash
+curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/zorynda-latest/zorynda_x86_64.rpm -o /tmp/zorynda.rpm
+sudo dnf install /tmp/zorynda.rpm
+```
+
+</details>
+
+<details>
+<summary><b>Any Linux (AppImage)</b></summary>
+
+```bash
+mkdir -p ~/Applications
+curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/zorynda-latest/zorynda_amd64.AppImage -o ~/Applications/zorynda
+chmod +x ~/Applications/zorynda
+~/Applications/zorynda
+```
+
+No install, no root. Delete the file to uninstall.
+
+</details>
+
+<details>
+<summary><b>macOS (Apple Silicon and Intel)</b></summary>
+
+```bash
+curl -L https://github.com/bogdan-tr/obelisk-suite/releases/download/zorynda-latest/zorynda_universal.dmg -o ~/Downloads/zorynda.dmg
+open ~/Downloads/zorynda.dmg
+```
+
+Drag Zorynda to Applications. It is not notarised yet, so the first launch
+needs **right-click → Open** rather than a double-click; macOS then remembers
+the choice.
+
+</details>
+
+<details>
+<summary><b>Windows 10 and 11</b></summary>
+
+Download **[zorynda_x64-setup.exe](https://github.com/bogdan-tr/obelisk-suite/releases/download/zorynda-latest/zorynda_x64-setup.exe)**
+and run it.
+
+The installer is not code-signed yet, so SmartScreen will show
+*"Windows protected your PC"*. Choose **More info → Run anyway**. Zorynda
+then appears in the Start menu and uninstalls through **Settings → Apps** like
+any other program.
+
+</details>
+
+</details>
+
+---
+
 ## The rest of the suite
 
 Designed, specified, named, and not yet released. Here so you can see where
 this is going.
 
 <table>
-<tr>
-<td width="84" align="center"><img src="assets/zorynda.png" alt="" width="60"></td>
-<td><b>Zorynda</b> · calendar<br><sub>Local and private by construction — no account, no sync server — and good-looking with it. Beyond month and week, timelines: long plans broken into stages that unlock one another, laid against real dates.</sub></td>
-</tr>
 <tr>
 <td width="84" align="center"><img src="assets/dreambase.png" alt="" width="60"></td>
 <td><b>Dreambase</b> · dream journal<br><sub>Entries encrypted at rest and tagged automatically, then read back by a model on your own hardware to show what recurs — the people, the places, the signs. Nothing leaves the machine.</sub></td>
